@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-@Profile("prod") // 필요없을 때 이름 바꾸면 됨
+@Profile("local") // 필요없을 때 이름 바꾸면 됨
 public class EmpDepInsertRunner implements ApplicationRunner {
     @Autowired
     DepartmentRepository departmentRepository;
